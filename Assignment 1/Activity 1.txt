@@ -1,4 +1,4 @@
-This program will instruct the user on the steps to make a cup of green tea.
+This program will instruct the user on how to make a cup of green tea.
 
 Find your favorite mug.
 Find a bag of green tea.
