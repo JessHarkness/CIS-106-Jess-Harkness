@@ -1,0 +1,23 @@
+This program will instruct the user on the steps to make a cup of green tea.
+
+Find your favorite mug.
+Find a bag of green tea.
+Rip the foil tab off the top of the tea bag.
+Remove the tea bag from the pouch.
+Place the tea bag in your mug. 
+Hang the tag from the bag over the side of your mug.
+Find a tea kettle.
+Lift the lid from the kettle.
+Fill the kettle halfway with water.
+Replace the lid on the kettle.
+Slowly turn your stovetop gas dial counter-clockwise to ignite the burner.
+Turn the dial to medium.
+Place the kettle on top of the lit stovetop burner.
+When the kettle whistles, turn the gas dial clockwise to “off.”
+Open the spout on the kettle.
+Fill your mug ¾ of the way with hot water from the kettle, covering the tea bag.
+Let the tea bag steep in the water for 3 minutes.
+	If you want a stronger cup of tea, then steep for 5 minutes.
+Lift the tea bag out of the mug using the tag.
+Discard the tea bag in the trash.
+End.
