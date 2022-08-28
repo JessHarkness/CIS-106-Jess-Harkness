@@ -1,4 +1,4 @@
-This program displays "Hello Jess!"
+This program displays "Hello world!"
 
 Input:
 
@@ -10,4 +10,4 @@ Process:
 
 Output:
 
-    Hello Jess!
+    Hello world!
