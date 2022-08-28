@@ -11,8 +11,8 @@
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <comment text="This program displays &quot;Hello world!&quot;"/>
-            <output expression="&quot;Hello world!&quot;" newline="True"/>
+            <comment text="This program displays &quot;Hello Jess!&quot;"/>
+            <output expression="&quot;Hello Jess!&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>
