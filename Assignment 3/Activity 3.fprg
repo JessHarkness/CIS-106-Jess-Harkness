@@ -19,7 +19,7 @@
             <declare name="cm" type="Real" array="False" size=""/>
             <assign variable="km" expression="miles*1.609344"/>
             <assign variable="meters" expression="km*1000"/>
-            <assign variable="cm" expression="m*100"/>
+            <assign variable="cm" expression="meters*100"/>
             <declare name="Kilometers" type="String" array="False" size=""/>
             <declare name="Meters" type="String" array="False" size=""/>
             <declare name="Centimeters" type="String" array="False" size=""/>
