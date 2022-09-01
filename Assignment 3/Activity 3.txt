@@ -1,0 +1,8 @@
+This program converts an input distance in miles to distance in kilometers, meters, and centimeters.
+Input:
+    Display prompt
+    Get distance in miles
+Process:
+    Convert distance in miles to distance in kilometers, meters, and centimeters
+Output:
+    Display distance in kilometers, meters, and centimeters
