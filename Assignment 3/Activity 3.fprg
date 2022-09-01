@@ -4,27 +4,28 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="PhotonUser"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-09-01 10:00:13 AM"/>
+        <attribute name="saved" value="2022-09-01 10:26:16 AM"/>
         <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLU1PUkE5Sk87MjAyMi0wOS0wMTswODo1MTo1NSBBTTszMzU3"/>
-        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLU1PUkE5Sk87MjAyMi0wOS0wMTsxMDowMDoxMyBBTTszOzM0NDg="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLU1PUkE5Sk87MjAyMi0wOS0wMTsxMDoyNjoxNiBBTTs0OzM0NjA="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <comment text="This program converts an input distance in miles to distance in kilometers, meters, and centimeters."/>
+            <output expression="&quot;Please enter a distance in miles.&quot;" newline="True"/>
             <declare name="miles" type="Real" array="False" size=""/>
             <input variable="miles"/>
             <declare name="km" type="Real" array="False" size=""/>
-            <declare name="meters" type="Real" array="False" size=""/>
+            <declare name="metrs" type="Real" array="False" size=""/>
             <declare name="cm" type="Real" array="False" size=""/>
             <assign variable="km" expression="miles*1.609344"/>
-            <assign variable="meters" expression="km*1000"/>
-            <assign variable="cm" expression="meters*100"/>
+            <assign variable="metrs" expression="km*1000"/>
+            <assign variable="cm" expression="metrs*100"/>
             <declare name="Kilometers" type="String" array="False" size=""/>
             <declare name="Meters" type="String" array="False" size=""/>
             <declare name="Centimeters" type="String" array="False" size=""/>
             <output expression="&quot;Kilometers:&quot;&amp;km" newline="True"/>
-            <output expression="&quot;Meters:&quot;&amp;meters" newline="True"/>
+            <output expression="&quot;Meters:&quot;&amp;metrs" newline="True"/>
             <output expression="&quot;Centimeters:&quot;&amp;cm" newline="True"/>
         </body>
     </function>
