@@ -10,4 +10,3 @@ seconds = hours * 3600
 
 print("Your age is:")
 print(months, "months", days, "days", hours, "hours", seconds, "seconds")
-
