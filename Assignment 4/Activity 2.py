@@ -1,4 +1,4 @@
-# This program will convert a user's age (years) to months, days, hours, seconds.
+# This program converts a user's age (years) to months, days, hours, seconds.
 
 print("Enter your age in years.")
 age = int(input())
@@ -8,5 +8,6 @@ days = age * 365
 hours = days * 24
 seconds = hours * 3600
 
-print("You are:")
-print(months, "months", days, "days", hours, "hours", seconds, "seconds", "old")
+print("Your age is:")
+print(months, "months", days, "days", hours, "hours", seconds, "seconds")
+
