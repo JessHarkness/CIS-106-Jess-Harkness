@@ -1,0 +1,14 @@
+This program asks a user to input their age in years and converts it to months, days, hours, and seconds.
+
+Input:
+
+    Display prompt
+    Get user's age in years
+
+Process:
+
+    Convert age in years to age in months, days, hours, and seconds
+
+Output:
+
+    Display age in months, days, hours, and seconds
