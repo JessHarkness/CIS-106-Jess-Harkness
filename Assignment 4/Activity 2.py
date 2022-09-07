@@ -6,7 +6,7 @@ age = int(input())
 months = age * 12
 days = age * 365
 hours = days * 24
-seconds = hours * 3600
+seconds = hours * 60 * 60
 
 print("Your age is:")
 print(months, "months", days, "days", hours, "hours", seconds, "seconds")
