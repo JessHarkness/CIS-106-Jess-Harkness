@@ -7,7 +7,10 @@ Input:
 
 Process:
 
-    Convert age in years to age in months, days, hours, and seconds
+    Convert age in years to age in months
+    Convert age in years to age in days
+    Convert age in years to age in hours
+    Convert age in years to age in seconds
 
 Output:
 
