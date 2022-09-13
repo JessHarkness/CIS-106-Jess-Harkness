@@ -2,52 +2,52 @@
 
 Main Program
 
-  Get miles
+    Get miles
+    
+    Calculate kilometers
 
-  Calculate kilometers
-
-  Calculate meters
+    Calculate meters
 	
-  Calculate centimeters
+    Calculate centimeters
 
-  Display Result
+    Display Result
 
 
 Get miles
 
-  Parameters:
+    Parameters:
 		
-    None
+        None
     
-	Process:
+    Process:
 		
-    Display Prompt
+        Display Prompt
 		
-    Get distance in miles
+        Get distance in miles
 	
-  Return Value:
+    Return Value:
 
-	  Distance in miles
+	    Distance in miles
 
 
 Calculate kilometers
 	
-  Parameters:
+    Parameters:
 
-	  Distance in miles
+	    Distance in miles
 
-  Process:
+    Process:
 
-	  Convert miles to kilometers
+	    Convert miles to kilometers
 
-  Return value:
+    Return value:
 
-	  Distance in kilometers
+	    Distance in kilometers
 
 
 Calculate meters
 	
-	Parameters: 
+    Parameters: 
 		
 		Distance in kilometers
 
@@ -85,7 +85,7 @@ Display Result
 
 		Distance in meters
 		
-    Distance in centimeters
+        Distance in centimeters
 
 	Process:
 
