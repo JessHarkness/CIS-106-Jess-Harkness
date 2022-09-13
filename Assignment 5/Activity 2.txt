@@ -1,0 +1,97 @@
+# This program converts an input distance in miles to distance in kilometers, meters, and centimeters.
+
+Main Program
+
+  Get miles
+
+  Calculate kilometers
+
+  Calculate meters
+	
+  Calculate centimeters
+
+  Display Result
+
+
+Get miles
+
+  Parameters:
+		
+    None
+    
+	Process:
+		
+    Display Prompt
+		
+    Get distance in miles
+	
+  Return Value:
+
+	  Distance in miles
+
+
+Calculate kilometers
+	
+  Parameters:
+
+	  Distance in miles
+
+  Process:
+
+	  Convert miles to kilometers
+
+  Return value:
+
+	  Distance in kilometers
+
+
+Calculate meters
+	
+	Parameters: 
+		
+		Distance in kilometers
+
+	Process:
+
+		Convert kilometers to meters
+
+	Return value: 
+
+		Distance in meters
+
+
+Calculate centimeters	
+	
+	Parameters:
+
+		Distance in meters
+
+	Process:
+
+		Convert meters to centimeters
+
+	Return value:
+
+		Distance in meters
+
+
+Display Result
+
+	Parameters:
+
+		Distance in miles
+		
+		Distance in kilometers
+
+		Distance in meters
+		
+    Distance in centimeters
+
+	Process:
+
+		Display distance in miles, kilometers, meters, centimeters
+
+	Return value:
+
+		None
+
