@@ -17,7 +17,7 @@ Get miles
 
     Parameters:
 		
-        None
+	    None		
     
     Process:
 		
@@ -47,11 +47,11 @@ Calculate kilometers
 
 Calculate meters
 	
-    Parameters: 
+	Parameters:	 
 		
 		Distance in kilometers
 
-	Process:
+    Process:
 
 		Convert kilometers to meters
 
