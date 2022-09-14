@@ -1,4 +1,5 @@
 # This program converts a user's age (years) to months, days, hours, seconds.
+# Reference: https://blog.prepscholar.com/how-many-seconds-in-a-day-a-month-a-year
 
 print("Enter your age in years.")
 age = int(input())
