@@ -9,7 +9,9 @@ def calculateMeters(kilometers):
     return meters
 
 def displayResult(miles, kilometers, meters, centimeters):
-    print(str(miles) + " miles is: " + str(kilometers) + " kilometers, " + str(meters) + " meters, " + str(centimeters) + " centimeters. ", end='', flush=True)
+    print(str(miles) + " miles is: " + str(kilometers) + 
+          " kilometers, " + str(meters) + " meters, " + 
+          str(centimeters) + " centimeters. ", end='', flush=True)
 
 def calculateCentimeters(meters):
     centimeters = meters * 100
