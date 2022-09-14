@@ -23,8 +23,9 @@ def getMiles():
     return miles
 
 # Main
-# This program takes in input distance in miles and converts it to kilometers, meters, and centimeters.
+# This program takes an input distance in miles and converts it to kilometers, meters, and centimeters.
 # References: https://www.mathisfun.com/measure/us-standard-length.html
+# References: https://www.testingdocs.com/user-defined-functions-in-flowgorithm/
 miles = getMiles()
 kilometers = calculateKilometers(miles)
 meters = calculateMeters(kilometers)
