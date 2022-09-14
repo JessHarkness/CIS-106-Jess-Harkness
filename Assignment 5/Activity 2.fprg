@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-14 10:10:05 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUZCVko0OTI7MjAyMi0wOS0xNDswNzo1OToyNiBBTTszMzA4"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUZCVko0OTI7MjAyMi0wOS0xNDswODo0Mjo1MSBBTTs0OzM0MTA="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTEzTjRMU087MjAyMi0wOS0xNDsxMDoxMDowNSBBTTszOzM0MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program takes in input distance in miles and converts it to kilometers, meters, and centimeters."/>
+            <comment text="References: https://www.mathisfun.com/measure/us-standard-length.html"/>
+            <declare name="miles" type="Real" array="False" size=""/>
+            <declare name="kilometers" type="Real" array="False" size=""/>
+            <declare name="meters" type="Real" array="False" size=""/>
+            <declare name="centimeters" type="Real" array="False" size=""/>
+            <assign variable="miles" expression="GetMiles()"/>
+            <assign variable="kilometers" expression="CalculateKilometers(miles)"/>
+            <assign variable="meters" expression="CalculateMeters(kilometers)"/>
+            <assign variable="centimeters" expression="CalculateCentimeters(meters)"/>
+            <call expression="DisplayResult(miles, kilometers, meters, centimeters)"/>
+        </body>
+    </function>
+    <function name="CalculateKilometers" type="Real" variable="kilometers">
+        <parameters>
+            <parameter name="miles" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="kilometers" type="Real" array="False" size=""/>
+            <assign variable="kilometers" expression="miles*1.609344"/>
+        </body>
+    </function>
+    <function name="CalculateMeters" type="Real" variable="meters">
+        <parameters>
+            <parameter name="kilometers" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="meters" type="Real" array="False" size=""/>
+            <assign variable="meters" expression="kilometers*1000"/>
+        </body>
+    </function>
+    <function name="DisplayResult" type="None" variable="miles, kilometers, meters, centimeters">
+        <parameters>
+            <parameter name="miles" type="Real" array="False"/>
+            <parameter name="kilometers" type="Real" array="False"/>
+            <parameter name="meters" type="Real" array="False"/>
+            <parameter name="centimeters" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="miles &amp; &quot; miles is: &quot; &amp; kilometers &amp; &quot; kilometers, &quot; &amp; meters &amp; &quot; meters, &quot; &amp; centimeters &amp; &quot; centimeters. &quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="CalculateCentimeters" type="Real" variable="centimeters">
+        <parameters>
+            <parameter name="meters" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="centimeters" type="Real" array="False" size=""/>
+            <assign variable="centimeters" expression="meters*100"/>
+        </body>
+    </function>
+    <function name="GetMiles" type="Real" variable="miles">
+        <parameters/>
+        <body>
+            <declare name="miles" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter your distance in miles:&quot;" newline="True"/>
+            <input variable="miles"/>
+        </body>
+    </function>
+</flowgorithm>
