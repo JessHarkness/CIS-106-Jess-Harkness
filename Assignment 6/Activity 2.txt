@@ -19,98 +19,98 @@ Main Program
 Get Years
 
     Parameters:
-        
-      None
-        
+          
+        None
+          
     Process:
     
-      Display prompt
-        
-      Get age in years
-        
+        Display prompt
+          
+        Get age in years
+          
     Return value:
     
-      Age in years
-        
-        
+        Age in years
+          
+          
 Calculate months
 
     Parameters:
     
-      Age in years
-        
+        Age in years
+          
     Process:
     
-      Convert years to months
-        
+        Convert years to months
+          
     Return value:
     
-      Age in months
-        
+        Age in months
+          
 
 Calculate days
 
     Parameters:
     
-      Age in years
-        
+        Age in years
+          
     Process:
     
-      Convert years to days
-        
+        Convert years to days
+          
     Return value:
     
-      Age in days
-        
-        
+        Age in days
+          
+          
 Calculate hours
 
     Parameters:
     
-      Age in days
-        
+        Age in days
+          
     Process:
     
-      Convert days to hours
-      
+        Convert days to hours
+        
     Return value:
     
-      Age in hours
-      
+        Age in hours
+        
      
 Calculate seconds
 
     Parameters:
     
-      Age in hours
-       
+        Age in hours
+         
     Process:
     
-      Convert hours to seconds
-      
+        Convert hours to seconds
+        
     Return value:
     
-      Age in seconds
-        
+        Age in seconds
+          
     
 Display Result
 
     Parameters:
     
-      Age in years
-        
-      Age in months
-        
-      Age in days
-        
-      Age in hours
-        
-      Age in seconds
-        
+        Age in years
+          
+        Age in months
+          
+        Age in days
+          
+        Age in hours
+          
+        Age in seconds
+          
     Process:
     
-      Display age in years, months, days, hours, seconds
-        
+        Display age in years, months, days, hours, seconds
+          
     Return value:
     
-      None
+        None
