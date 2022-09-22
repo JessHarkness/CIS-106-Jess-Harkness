@@ -51,4 +51,4 @@ def main_function():
     display_result(years, months, days, hours, seconds)
 
 
-main_function ()
+main_function()
