@@ -41,6 +41,7 @@ def display_result(years, months, days,
           " days, " + str(hours) + " hours, " + 
           str(seconds) + " seconds.")
 
+# Main
     
 def main_function():
     years = get_years()
