@@ -19,7 +19,7 @@ Main Program
         
                 Calculate overtime
             
-                Assign gross pay
+                Reassign gross pay
             
             Else
         
