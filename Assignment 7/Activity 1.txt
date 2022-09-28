@@ -10,6 +10,7 @@ Main Program
     
     Calculate gross pay
     
+    
     Overtime condition
     
         If hours > 40
@@ -18,12 +19,13 @@ Main Program
         
                 Calculate overtime
             
-                Reassign gross pay
+                Assign gross pay
             
             Else
         
-                Do nothing
+                Calculate gross pay
             
+    
     Display result
     
 
