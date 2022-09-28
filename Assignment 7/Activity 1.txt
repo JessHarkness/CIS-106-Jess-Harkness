@@ -1,0 +1,95 @@
+# This program asks a user for their hours worked,
+# and pay rate per hour, to
+# calculate their gross pay over one week.
+
+Main Program
+
+    Get hours
+    
+    Get pay rate per hour
+    
+    Calculate gross pay
+    
+    Overtime condition
+    
+        If hours > 40
+        
+            Calculate overtime
+            
+                Reassign gross pay
+            
+        Else
+        
+            Do nothing
+            
+    Display result
+    
+
+Get hours
+
+    Parameters:
+    
+        None
+        
+    Process:
+    
+        Display prompt
+        
+        Get hours
+        
+    Return value:
+    
+        Hours
+        
+        
+Get pay rate per hour
+
+    Parameters:
+    
+        None
+        
+    Process:
+        
+        Display prompt
+        
+        Get pay rate per hour
+        
+    Return value:
+    
+        Pay per hour
+        
+
+Calculate gross pay
+
+    Parameters:
+    
+        Hours
+        
+        Pay per hour
+        
+    Process:
+    
+        Calculate gross pay
+        
+    Return value:
+    
+        Gross pay
+        
+
+Display Result
+
+    Parameters:
+    
+        Hours
+        
+        Pay per hour
+        
+        Gross pay
+        
+    Process:
+    
+        Display gross pay
+        
+    Return value:
+    
+        None
