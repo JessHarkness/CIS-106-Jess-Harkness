@@ -84,10 +84,6 @@ Display Result
 
     Parameters:
     
-        Hours
-        
-        Pay per hour
-        
         Gross pay
         
     Process:
