@@ -10,22 +10,6 @@ Main Program
     
     Calculate gross pay
     
-    
-    Overtime condition
-    
-        If hours > 40
-        
-            Then
-        
-                Calculate overtime
-            
-                Reassign gross pay
-            
-            Else
-        
-                Calculate gross pay
-            
-    
     Display result
     
 
@@ -74,6 +58,12 @@ Calculate gross pay
     Process:
     
         Calculate gross pay
+        
+            Overtime condition
+            
+                    Calculate overtime
+                    
+                    Reassign gross pay
         
     Return value:
     
