@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-29 11:32:12 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTlFN1U0UVY7MjAyMi0wOS0yOTswODozODo0OCBBTTszMzQ2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTlFN1U0UVY7MjAyMi0wOS0yOTswODo1OToyNiBBTTsxMjszNTAz"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVREQkczMDE7MjAyMi0wOS0yOTsxMTozMjoxMiBBTTsxNDszNDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program asks a user for their hours &#13;&#10;worked, and pay rate per hour, to &#13;&#10;calculate their gross pay over one week."/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="PayRate" type="Real" array="False" size=""/>
+            <declare name="GrossPay" type="Real" array="False" size=""/>
+            <assign variable="hours" expression="GetHours()"/>
+            <assign variable="PayRate" expression="GetPayRate()"/>
+            <assign variable="GrossPay" expression="CalculateGrossPay(hours, PayRate)"/>
+            <call expression="DisplayResult(GrossPay)"/>
+        </body>
+    </function>
+    <function name="CalculateGrossPay" type="Real" variable="GrossPay">
+        <parameters>
+            <parameter name="hours" type="Real" array="False"/>
+            <parameter name="PayRate" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="GrossPay" type="Real" array="False" size=""/>
+            <declare name="OvertimeRate" type="Real" array="False" size=""/>
+            <declare name="Overtime" type="Real" array="False" size=""/>
+            <assign variable="GrossPay" expression="hours * PayRate"/>
+            <if expression="hours &gt; 40">
+                <then>
+                    <assign variable="OvertimeRate" expression="1.5"/>
+                    <assign variable="Overtime" expression="(hours - 40) * OvertimeRate * PayRate"/>
+                    <assign variable="GrossPay" expression="(40 * PayRate) + Overtime"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+    <function name="DisplayResult" type="None" variable="">
+        <parameters>
+            <parameter name="GrossPay" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;You earned: &quot; &amp; GrossPay &amp; &quot; dollars this week. &quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="GetHours" type="Real" variable="hours">
+        <parameters/>
+        <body>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the number of hours you worked this week: &quot;" newline="True"/>
+            <input variable="hours"/>
+        </body>
+    </function>
+    <function name="GetPayRate" type="Real" variable="PayRate">
+        <parameters/>
+        <body>
+            <declare name="PayRate" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter your pay rate per hour: &quot;" newline="True"/>
+            <input variable="PayRate"/>
+        </body>
+    </function>
+</flowgorithm>
