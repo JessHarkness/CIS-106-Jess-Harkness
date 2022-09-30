@@ -1,0 +1,32 @@
+def calculateGrossPay(hours, payRate):
+    grossPay = hours * payRate
+    if hours > 40:
+        overtimeRate = 1.5
+        overtime = (hours - 40) * overtimeRate * payRate
+        grossPay = 40 * payRate + overtime
+    
+    return grossPay
+
+def displayResult(grossPay):
+    print("You earned: " + str(grossPay) + " dollars this week. ")
+
+def getHours():
+    print("Enter the number of hours you worked this week: ")
+    hours = float(input())
+    
+    return hours
+
+def getPayRate():
+    print("Enter your pay rate per hour: ")
+    payRate = float(input())
+    
+    return payRate
+
+# Main
+# This program asks a user for their hours
+# worked, and pay rate per hour, to
+# calculate their gross pay over one week.
+hours = getHours()
+payRate = getPayRate()
+grossPay = calculateGrossPay(hours, payRate)
+displayResult(grossPay)
