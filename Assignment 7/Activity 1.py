@@ -26,6 +26,8 @@ def getPayRate():
 # This program asks a user for their hours
 # worked, and pay rate per hour, to
 # calculate their gross pay over one week.
+# References: https://www.weisbergcummings.com/weighted-overtime-pay
+/#:~:text=Overtime%20refers%20to%20the%20time,above%2040%20hours%20per%20week.
 hours = getHours()
 payRate = getPayRate()
 grossPay = calculateGrossPay(hours, payRate)
