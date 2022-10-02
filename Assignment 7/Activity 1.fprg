@@ -4,15 +4,17 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="PhotonUser"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-09-29 11:32:12 AM"/>
+        <attribute name="saved" value="2022-10-02 10:47:00 AM"/>
         <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTlFN1U0UVY7MjAyMi0wOS0yOTswODozODo0OCBBTTszMzQ2"/>
         <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTlFN1U0UVY7MjAyMi0wOS0yOTswODo1OToyNiBBTTsxMjszNTAz"/>
         <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVREQkczMDE7MjAyMi0wOS0yOTsxMTozMjoxMiBBTTsxNDszNDM3"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUlOMlJJT087MjAyMi0xMC0wMjsxMDo0NzowMCBBTTs0OzM0NTA="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <comment text="This program asks a user for their hours &#13;&#10;worked, and pay rate per hour, to &#13;&#10;calculate their gross pay over one week."/>
+            <comment text="References: https://www.weisbergcummings.com/weighted-overtime-pay#%20/#:~:text=Overtime%20refers%20to%20the%20time,above%2040%20hours%20per%20week."/>
             <declare name="hours" type="Real" array="False" size=""/>
             <declare name="PayRate" type="Real" array="False" size=""/>
             <declare name="GrossPay" type="Real" array="False" size=""/>
@@ -31,14 +33,15 @@
             <declare name="GrossPay" type="Real" array="False" size=""/>
             <declare name="OvertimeRate" type="Real" array="False" size=""/>
             <declare name="Overtime" type="Real" array="False" size=""/>
-            <assign variable="GrossPay" expression="hours * PayRate"/>
             <if expression="hours &gt; 40">
                 <then>
                     <assign variable="OvertimeRate" expression="1.5"/>
                     <assign variable="Overtime" expression="(hours - 40) * OvertimeRate * PayRate"/>
                     <assign variable="GrossPay" expression="(40 * PayRate) + Overtime"/>
                 </then>
-                <else/>
+                <else>
+                    <assign variable="GrossPay" expression="hours * PayRate"/>
+                </else>
             </if>
         </body>
     </function>
