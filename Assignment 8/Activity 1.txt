@@ -56,7 +56,7 @@ For Loop
     
         For values in range of 1 to (stop + 1):
         
-            multiply by multiplier
+            multiply values by multiplier
             
         Display expressions
         
