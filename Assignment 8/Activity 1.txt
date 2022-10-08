@@ -1,83 +1,45 @@
-# This program generates a given number 
+# This program generates a given number
 # of multiplication expressions for a given value.
 
 Main program
-
     Get multiplier (start)
-    
     Get number of expressions (stop)
-    
-    For Loop
-    
+    Process Expressions
 
 Get multiplier
-
     Parameters:
-    
         None
-        
     Process:
-    
         Display prompt
-        
         Get multiplier
-        
     Return value:
-    
         multiplier
-        
-        
+
 Get number of expressions
-
     Parameters:
-    
         None
-        
     Process:
-    
         Display prompt
-        
         Get number of expressions
-        
     Return value:
-    
         number of expressions
-        
-        
-Display result
 
+Process Expressions
     Parameters:
-    
         Multiplier
-        
         Number of expressions
-        
     Process:
-    
-        Display result
-        
-    Return value:
-    
-        None
-        
-
-For Loop
-
-    Parameters:
-    
-        Multiplier
-        
-        Number of expressions
-        
-    Process:
-    
         For values in range of 1 to (stop + 1):
-        
             multiply values by multiplier
-            
             Display result
-        
     Return value:
-    
         None
-        
+
+Display result
+    Parameters:
+        Multiplier
+        Number of expressions
+    Process:
+        Display result
+    Return value:
+        None
