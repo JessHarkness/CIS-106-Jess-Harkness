@@ -50,6 +50,8 @@ Display result
     
         Multiplier
         
+        Number of expressions
+        
     Process:
     
         Display result
