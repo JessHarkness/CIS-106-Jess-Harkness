@@ -44,6 +44,21 @@ Get number of expressions
         number of expressions
         
         
+Display result
+
+    Parameters:
+    
+        Multiplier
+        
+    Process:
+    
+        Display result
+        
+    Return value:
+    
+        None
+        
+
 For Loop
 
     Parameters:
@@ -58,7 +73,7 @@ For Loop
         
             multiply values by multiplier
             
-        Display expressions
+            Display result
         
     Return value:
     
