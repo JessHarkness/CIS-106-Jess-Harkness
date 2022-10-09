@@ -23,7 +23,7 @@
             <declare name="i" type="Integer" array="False" size=""/>
             <assign variable="multiplier" expression="getMultiplier()"/>
             <assign variable="numberOfExpressions" expression="getNumberOfExpressions()"/>
-            <call expression="process_Expressions(multiplier, numberOfExpressions)"/>
+            <call expression="processExpressions(multiplier, numberOfExpressions)"/>
         </body>
     </function>
     <function name="displayResult" type="None" variable="">
@@ -52,7 +52,7 @@
             <input variable="numberOfExpressions"/>
         </body>
     </function>
-    <function name="process_Expressions" type="None" variable="">
+    <function name="processExpressions" type="None" variable="">
         <parameters>
             <parameter name="multiplier" type="Integer" array="False"/>
             <parameter name="numberOfExpressions" type="Integer" array="False"/>
