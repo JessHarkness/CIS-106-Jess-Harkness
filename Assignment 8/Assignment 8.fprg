@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-09 10:31:54 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUw2Vk1NUDA7MjAyMi0xMC0wNzswODozNTo1MCBBTTszMzM3"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUw2Vk1NUDA7MjAyMi0xMC0wNzswODo0OTo1MSBBTTs2OzM0NTY="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVY1SFExR1U7MjAyMi0xMC0wODswOTowODo1NyBBTTs3OzM0NTk="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVVEQ0tPMVY7MjAyMi0xMC0wOTswODo1Njo1MSBBTTsxOzM0NjI="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTBGUENMMUs7MjAyMi0xMC0wOTsxMDozMTo1NCBBTTszOzM0MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program generates a given&#13;&#10;number of multiplication expressions&#13;&#10;for a given multiplier."/>
+            <comment text="References: https://www.youtube.com/watch?v=2CtTJzXrxfU"/>
+            <comment text="References: https://www.w3schools.com/python/python_for_loops.asp"/>
+            <declare name="multiplier" type="Integer" array="False" size=""/>
+            <declare name="numberOfExpressions" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="multiplier" expression="getMultiplier()"/>
+            <assign variable="numberOfExpressions" expression="getNumberOfExpressions()"/>
+            <call expression="processExpressions(multiplier, numberOfExpressions)"/>
+        </body>
+    </function>
+    <function name="displayResult" type="None" variable="">
+        <parameters>
+            <parameter name="multiplier" type="Integer" array="False"/>
+            <parameter name="numberOfExpressions" type="Integer" array="False"/>
+            <parameter name="i" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="multiplier &amp; &quot;x&quot; &amp; i &amp; &quot;=&quot; &amp; (i * multiplier)" newline="True"/>
+        </body>
+    </function>
+    <function name="processExpressions" type="None" variable="">
+        <parameters>
+            <parameter name="multiplier" type="Integer" array="False"/>
+            <parameter name="numberOfExpressions" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;For &quot; &amp; numberOfExpressions &amp; &quot; multiples of &quot; &amp; multiplier &amp; &quot;: &quot;" newline="True"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="numberOfExpressions" direction="inc" step="1">
+                <call expression="displayResult(multiplier, numberOfExpressions, i)"/>
+            </for>
+        </body>
+    </function>
+    <function name="getMultiplier" type="Integer" variable="multiplier">
+        <parameters/>
+        <body>
+            <declare name="multiplier" type="Integer" array="False" size=""/>
+            <output expression="&quot;What number will be your multiplier?&quot;" newline="True"/>
+            <input variable="multiplier"/>
+        </body>
+    </function>
+    <function name="getNumberOfExpressions" type="Integer" variable="numberOfExpressions">
+        <parameters/>
+        <body>
+            <declare name="numberOfExpressions" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many expressions do you want to generate?&quot;" newline="True"/>
+            <input variable="numberOfExpressions"/>
+        </body>
+    </function>
+</flowgorithm>
