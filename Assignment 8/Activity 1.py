@@ -1,5 +1,5 @@
 def displayResult(multiplier, numberOfExpressions, i):
-    print(str(multiplier) + "x" + str(i) + "=" + str(i * multiplier))
+    print(str(multiplier) + " * " + str(i) + " = " + str(i * multiplier))
 
 def processExpressions(multiplier, numberOfExpressions):
     print("For " + str(numberOfExpressions) + " multiples of " + str(multiplier) + ": ")
