@@ -1,11 +1,6 @@
 def displayResult(multiplier, numberOfExpressions, i):
     print(str(multiplier) + " * " + str(i) + " = " + str(i * multiplier))
 
-def processExpressions(multiplier, numberOfExpressions):
-    print("For " + str(numberOfExpressions) + " multiples of " + str(multiplier) + ": ")
-    for i in range(1, numberOfExpressions + 1, 1):
-        displayResult(multiplier, numberOfExpressions, i)
-
 def getMultiplier():
     print("What number will be your multiplier?")
     multiplier = int(input())
@@ -17,6 +12,10 @@ def getNumberOfExpressions():
     numberOfExpressions = int(input())
     
     return numberOfExpressions
+
+def processExpressions(multiplier, numberOfExpressions):
+    for i in range(1, numberOfExpressions + 1, 1):
+        displayResult(multiplier, numberOfExpressions, i)
 
 # Main
 # This program generates a given
