@@ -39,7 +39,8 @@ Display result
     Parameters:
         Multiplier
         Number of expressions
+        Result
     Process:
-        Display result
+        Display expression
     Return value:
         None
