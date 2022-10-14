@@ -1,0 +1,48 @@
+# This program generates a given number
+# of multiplication expressions for a given value.
+
+Main
+    Get multiplier
+    Get number of expressions
+    Process expressions
+    
+Get multiplier
+    Parameters:
+        None
+    Process:
+        Display prompt
+        Get multiplier        
+    Return:
+        multiplier
+        
+Get number of expressions
+    Parameters:
+        None
+    Process:
+        Display prompt
+        Get number of expressions
+    Return:
+        number of expressions
+        
+Process expressions
+    Parameters:
+        multiplier
+        number of expressions
+    Process:
+        WHILE values are less than number of expressions
+            update values by +1
+            solutions = multiply values by multiplier
+            call "display result" function     
+    Return:
+        solutions
+        
+Display result
+    Parameters:
+        multiplier
+        value
+        solutions
+    Process:
+        Display expression
+    Return:
+        None
+        
