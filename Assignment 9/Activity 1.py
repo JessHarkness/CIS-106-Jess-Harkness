@@ -1,5 +1,5 @@
-def displayResult(multiplier, i, solutions):
-    print(str(multiplier) + " * " + str(i) + " = " + str(solutions))
+def displayResult(multiplier, value, solutions):
+    print(str(multiplier) + " * " + str(value) + " = " + str(solutions))
 
 def getMultiplier():
     print("What number will be your multiplier?")
@@ -14,11 +14,11 @@ def getNumberOfExpressions():
     return numberOfExpressions
 
 def processExpressions(multiplier, numberOfExpressions):
-    i = 1
-    while i < numberOfExpressions + 1:
-        solutions = multiplier * i
-        displayResult(multiplier, i, solutions)
-        i = i + 1
+    value = 1
+    while value < numberOfExpressions + 1:
+        solutions = multiplier * value
+        displayResult(multiplier, value, solutions)
+        value = value + 1
     
     return solutions
 
