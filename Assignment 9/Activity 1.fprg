@@ -4,10 +4,10 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="PhotonUser"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-15 09:54:07 AM"/>
+        <attribute name="saved" value="2022-10-15 10:04:56 AM"/>
         <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJHVU8yUVY7MjAyMi0xMC0xNDswODoxMDo1OCBBTTszMzQw"/>
         <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJHVU8yUVY7MjAyMi0xMC0xNDswODoyMToyMyBBTTszOzM0NDQ="/>
-        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUdHOEJTVEU7MjAyMi0xMC0xNTswOTo1NDowNyBBTTszOzM0NTI="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUdHOEJTVEU7MjAyMi0xMC0xNTsxMDowNDo1NiBBTTs0OzM0NDQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -25,11 +25,11 @@
     <function name="displayResult" type="None" variable="">
         <parameters>
             <parameter name="multiplier" type="Integer" array="False"/>
-            <parameter name="i" type="Integer" array="False"/>
+            <parameter name="value" type="Integer" array="False"/>
             <parameter name="solutions" type="Integer" array="False"/>
         </parameters>
         <body>
-            <output expression="multiplier &amp; &quot; * &quot; &amp; i &amp; &quot; = &quot; &amp; solutions" newline="True"/>
+            <output expression="multiplier &amp; &quot; * &quot; &amp; value &amp; &quot; = &quot; &amp; solutions" newline="True"/>
         </body>
     </function>
     <function name="getMultiplier" type="Integer" variable="multiplier">
@@ -55,12 +55,12 @@
         </parameters>
         <body>
             <declare name="solutions" type="Integer" array="False" size=""/>
-            <declare name="i" type="Integer" array="False" size=""/>
-            <assign variable="i" expression="1"/>
-            <while expression="i &lt; NumberOfExpressions + 1">
-                <assign variable="solutions" expression="multiplier * i"/>
-                <call expression="displayResult(multiplier, i, solutions)"/>
-                <assign variable="i" expression="i + 1"/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <assign variable="value" expression="1"/>
+            <while expression="value &lt; NumberOfExpressions + 1">
+                <assign variable="solutions" expression="multiplier * value"/>
+                <call expression="displayResult(multiplier, value, solutions)"/>
+                <assign variable="value" expression="value + 1"/>
             </while>
         </body>
     </function>
