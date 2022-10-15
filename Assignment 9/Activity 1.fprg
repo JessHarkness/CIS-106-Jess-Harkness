@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-15 09:54:07 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJHVU8yUVY7MjAyMi0xMC0xNDswODoxMDo1OCBBTTszMzQw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJHVU8yUVY7MjAyMi0xMC0xNDswODoyMToyMyBBTTszOzM0NDQ="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUdHOEJTVEU7MjAyMi0xMC0xNTswOTo1NDowNyBBTTszOzM0NTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program generates a given number of multiplication expressions for a given value."/>
+            <comment text="References: https://www.youtube.com/watch?v=GzVXu2TOYi0"/>
+            <comment text="References: https://www.w3schools.com/python/python_while_loops.asp"/>
+            <declare name="multiplier" type="Integer" array="False" size=""/>
+            <declare name="NumberOfExpressions" type="Integer" array="False" size=""/>
+            <assign variable="multiplier" expression="getMultiplier()"/>
+            <assign variable="NumberOfExpressions" expression="getNumberOfExpressions()"/>
+            <call expression="processExpressions(multiplier, NumberOfExpressions)"/>
+        </body>
+    </function>
+    <function name="displayResult" type="None" variable="">
+        <parameters>
+            <parameter name="multiplier" type="Integer" array="False"/>
+            <parameter name="i" type="Integer" array="False"/>
+            <parameter name="solutions" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="multiplier &amp; &quot; * &quot; &amp; i &amp; &quot; = &quot; &amp; solutions" newline="True"/>
+        </body>
+    </function>
+    <function name="getMultiplier" type="Integer" variable="multiplier">
+        <parameters/>
+        <body>
+            <declare name="multiplier" type="Integer" array="False" size=""/>
+            <output expression="&quot;What number will be your multiplier?&quot;" newline="True"/>
+            <input variable="multiplier"/>
+        </body>
+    </function>
+    <function name="getNumberOfExpressions" type="Integer" variable="NumberOfExpressions">
+        <parameters/>
+        <body>
+            <declare name="NumberOfExpressions" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many expressions do you want to generate?&quot;" newline="True"/>
+            <input variable="NumberOfExpressions"/>
+        </body>
+    </function>
+    <function name="processExpressions" type="Integer" variable="solutions">
+        <parameters>
+            <parameter name="multiplier" type="Integer" array="False"/>
+            <parameter name="NumberOfExpressions" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="solutions" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <while expression="i &lt; NumberOfExpressions + 1">
+                <assign variable="solutions" expression="multiplier * i"/>
+                <call expression="displayResult(multiplier, i, solutions)"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
