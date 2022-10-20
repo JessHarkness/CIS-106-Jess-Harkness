@@ -39,8 +39,7 @@ Process scores
             count >= number of scores
             
         Display average
-            
-        
+               
 Display average
     Parameters:
         Average 
