@@ -1,4 +1,50 @@
 # This program calculates an 
-# average score for a user.
+# average score based on user input.
 
 Main program
+    Get number of scores
+    Process scores
+    
+Get number of scores
+    Parameters:
+        None
+    Process:
+        Display prompt
+        Get number of scores
+    Return:
+        number of scores
+
+Get scores
+    Parameters:
+        None
+    Process:
+        Display prompt
+        Get score
+    Return:
+        score
+
+Process scores
+    Parameters:
+        Number of scores
+    Process:
+        starting sum = 0
+        starting count = 0
+        Repeat:
+            Get score
+            Update sum
+            Update count
+            Calculate average
+            
+            Until:
+            count >= number of scores
+            
+        Display average
+            
+        
+Display average
+    Parameters:
+        Average 
+    Process:
+        Display average
+    Return:
+        None
