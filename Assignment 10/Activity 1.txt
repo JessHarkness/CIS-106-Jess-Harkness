@@ -1,0 +1,4 @@
+# This program calculates an 
+# average score for a user.
+
+Main program
