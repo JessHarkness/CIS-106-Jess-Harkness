@@ -24,7 +24,7 @@ def processScores():
 
 # Main
 # This program calculates an average score based on user input.
-# Reference: https://www.freecodecamp.org/news/python-do-while-loop-example/
-# Reference:https://realpython.com/python-do-while/
+# References: https://www.freecodecamp.org/news/python-do-while-loop-example/
+# References: https://realpython.com/python-do-while/
 instructions()
 processScores()
