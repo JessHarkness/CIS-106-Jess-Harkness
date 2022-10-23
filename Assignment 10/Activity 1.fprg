@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jess Harkness"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-23 08:39:55 AM"/>
+        <attribute name="created" value="SmVzcyBIYXJrbmVzcztERVNLVE9QLTAzTENJNDU7MjAyMi0xMC0yMjswMzo1NzowNiBQTTszNTQ3"/>
+        <attribute name="edited" value="SmVzcyBIYXJrbmVzcztERVNLVE9QLTAzTENJNDU7MjAyMi0xMC0yMzswODozOTo1NSBBTTszOzM2NTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program calculates an average score based on user input."/>
+            <comment text="Reference: https://www.freecodecamp.org/news/python-do-while-loop-example/"/>
+            <comment text="Reference:https://realpython.com/python-do-while/"/>
+            <call expression="Instructions()"/>
+            <call expression="ProcessScores()"/>
+        </body>
+    </function>
+    <function name="DisplayAverage" type="None" variable="">
+        <parameters>
+            <parameter name="average" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;Your average score is: &quot; &amp; average" newline="True"/>
+        </body>
+    </function>
+    <function name="GetScores" type="Real" variable="score">
+        <parameters/>
+        <body>
+            <declare name="score" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a score:&quot;" newline="True"/>
+            <input variable="score"/>
+        </body>
+    </function>
+    <function name="Instructions" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Input any negative number when you are done entering scores.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="ProcessScores" type="None" variable="average">
+        <parameters/>
+        <body>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <declare name="count" type="Real" array="False" size=""/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <declare name="score" type="Real" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <do expression="score &gt;= 0">
+                <assign variable="score" expression="GetScores()"/>
+                <assign variable="sum" expression="sum + score"/>
+                <assign variable="count" expression="count + 1"/>
+            </do>
+            <assign variable="sum" expression="sum - score"/>
+            <assign variable="average" expression="sum / (count-1)"/>
+            <call expression="DisplayAverage(average)"/>
+        </body>
+    </function>
+</flowgorithm>
