@@ -1,0 +1,49 @@
+Main program
+    Get number of scores
+    Process scores
+    
+Get number of scores
+    Parameters:
+        None
+    Process:
+        Display prompt
+        Get number of scores
+    Return:
+        Number of scores
+        
+Get score
+    Parameters:
+        None
+    Process:
+        Display prompt
+        Get score
+    Return:
+        Score
+        
+Display score statistics
+    Parameters:
+        Average
+        Minimum
+        Maximum
+    Process:
+        Display text and statistics
+    Return:
+        None
+        
+Process scores
+    Parameters:
+        Number of scores
+    Process:
+        Create list with number of scores
+        For values from 0 to number of scores:
+            Get score
+            Update list of scores to include new score
+        
+        Calculate total (sum of scores in list)
+        Calculate average (total / number of scores)
+        Calculate min from list
+        Calculate max from list
+        
+        Display score statistics
+    Return: 
+        None
