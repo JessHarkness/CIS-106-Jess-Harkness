@@ -26,7 +26,7 @@ Display score statistics
         Minimum
         Maximum
     Process:
-        Display text and statistics
+        Display score statistics
     Return:
         None
         
@@ -34,7 +34,7 @@ Process scores
     Parameters:
         Number of scores
     Process:
-        Create list with number of scores
+        Create list with length = number of scores
         For values from 0 to number of scores:
             Get score
             Update list of scores to include new score
