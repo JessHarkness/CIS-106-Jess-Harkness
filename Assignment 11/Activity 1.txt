@@ -4,8 +4,6 @@
 # in that month.
 
 Main Program
-    Create list for days in each month
-    Create list for name of each month
     Repeat:
         Get year
         Get month number
@@ -33,8 +31,8 @@ Get month number
 Get month name
     Parameters:
         month number
-        list of month names
     Process:
+        Define list of month names
         Get the month name from the month name list for the corresponding input month number.
     Return:
         month name
@@ -43,8 +41,8 @@ Get month days
     Parameters:
         year
         month number
-        list of month days
     Process:
+        Define list of month days
         Get the month days from the month days list for the corresponding input month number.
             If month number is 2 and year is divisible by 4
                 month days is 29
