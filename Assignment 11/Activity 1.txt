@@ -1,49 +1,51 @@
-Main program
-    Get number of scores
-    Process scores
+References: https://www.mathsisfun.com/leap-years.html
+Main Program
+    Get year
+    Get month
+    Process date
     
-Get number of scores
+Get year
     Parameters:
         None
     Process:
-        Display prompt
-        Get number of scores
+        Display prompt asking for year
     Return:
-        Number of scores
-        
-Get score
+        year
+
+Get month
     Parameters:
         None
     Process:
-        Display prompt
-        Get score
+        Display prompt asking for month number
     Return:
-        Score
+        month number
         
-Display score statistics
+Process date
     Parameters:
-        Average
-        Minimum
-        Maximum
+        Year
+        Month number
     Process:
-        Display score statistics
+    Create array for number of days in each month
+    Create array with the names of each month
+        for month number in (1,12) and year >= 1582
+            Get year
+            Get month number
+                if month = 2 and year is divisible by 4 and not divisible by 100
+                    update month 2 in number of days array to become 29 days
+                else
+                    do nothing
+            
+            Display month and days
+                    
+             
+        
+
+Display month and days                    
+    Parameters:
+        Month names list
+        Month days list
+        Year
+    Process:
+        Display month name with corresponding number of days for input year
     Return:
-        None
-        
-Process scores
-    Parameters:
-        Number of scores
-    Process:
-        Create list with length = number of scores
-        For values from 0 to number of scores:
-            Get score
-            Update list of scores to include new score
-        
-        Calculate total (sum of scores in list)
-        Calculate average (total / number of scores)
-        Calculate min from list
-        Calculate max from list
-        
-        Display score statistics
-    Return: 
-        None
+        None   
