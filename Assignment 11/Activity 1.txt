@@ -1,8 +1,18 @@
-References: https://www.mathsisfun.com/leap-years.html
+# References: https://www.mathsisfun.com/leap-years.html
+# This program asks a user to input any month of
+# any year, and tells the user the number of days
+# in that month.
+
 Main Program
-    Get year
-    Get month
-    Process date
+    Create list for days in each month
+    Create list for name of each month
+    Repeat:
+        Get year
+        Get month number
+        Display days
+        Until:
+        year is less than 1582 (the first leap year), 
+        or month number is not in the range of 1 to 12
     
 Get year
     Parameters:
@@ -12,7 +22,7 @@ Get year
     Return:
         year
 
-Get month
+Get month number
     Parameters:
         None
     Process:
@@ -20,32 +30,33 @@ Get month
     Return:
         month number
         
-Process date
+Get month name
     Parameters:
-        Year
-        Month number
+        month number
+        list of month names
     Process:
-    Create array for number of days in each month
-    Create array with the names of each month
-        for month number in (1,12) and year >= 1582
-            Get year
-            Get month number
-                if month = 2 and year is divisible by 4 and not divisible by 100
-                    update month 2 in number of days array to become 29 days
-                else
-                    do nothing
-            
-            Display month and days
-                    
-             
-        
-
-Display month and days                    
-    Parameters:
-        Month names list
-        Month days list
-        Year
-    Process:
-        Display month name with corresponding number of days for input year
+        Get the month name from the month name list for the corresponding input month number.
     Return:
-        None   
+        month name
+        
+Get month days
+    Parameters:
+        year
+        month number
+        list of month days
+    Process:
+        Get the month days from the month days list for the corresponding input month number.
+            If month number is 2 and year is divisible by 4
+                month days is 29
+    Return:
+        month days
+            
+Display days
+    Parameters:
+        month name
+        month days
+        year
+    Process:
+        Display year, month name, and the number of days in that month
+    Return:
+        None
