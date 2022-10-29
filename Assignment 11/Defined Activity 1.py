@@ -54,8 +54,8 @@ def get_month_days(year, month_number, month_days_list):
 
 
 def display_days(month_name, month_days, year):
-    print('In ' + str(year) + ', there are ' 
-          + str(month_days) + ' days in ' + str(month_name))
+    print('In ' + str(year) + ', there are ' + 
+          str(month_days) + ' days in ' + str(month_name))
     
     
 main()
