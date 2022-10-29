@@ -47,7 +47,7 @@ def get_month_name(month_number, month_names_list):
 def get_month_days(year, month_number, month_days_list):
     month_days_list = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     month_days = month_days_list[month_number]
-    if month_number == 2 and year % 4 == 0:
+    if month_number == 2 and year % 4 == 0 and year % 100 != 0:
         month_days = 29
     
     return month_days
