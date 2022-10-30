@@ -43,8 +43,10 @@ def get_month_name(month_number, month_names_list):
 
 def get_month_days(year, month_number, month_days_list):
     month_days = month_days_list[month_number]
-    if month_number == 2 and year % 4 == 0 and year % 100 != 0:
+    if month_number == 2 and year % 4 == 0 and year % 400 == 0:
         month_days = 29
+    elif year % 100 == 0:
+        month_days = 28
     
     return month_days
 
