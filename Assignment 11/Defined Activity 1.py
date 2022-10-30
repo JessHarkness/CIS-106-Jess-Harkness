@@ -22,7 +22,7 @@ def main():
     
     
 def get_year():
-    print("Enter the year that you are looking for information from:")
+    print("Enter a year:")
     year = int(input())
     
     return year
