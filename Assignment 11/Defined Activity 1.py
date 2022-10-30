@@ -43,15 +43,14 @@ def get_month_name(month_number, month_names_list):
 
 def get_month_days(year, month_number, month_days_list):
     month_days = month_days_list[month_number]
-    if month_number == 2 and year % 4 == 0 and year % 400 == 0:
+    if month_number == 2 and year % 4 == 0 or year % 400 == 0 and year % 100 =! 0:
         month_days = 29
     
     return month_days
 
 
 def display_days(month_name, month_days, year):
-    print('In ' + str(year) + ', there are ' + 
-          str(month_days) + ' days in ' + str(month_name))
+    print(str(month_name) + ' ' + str(year) + ' has ' + str(month_days) + ' days.')
     
     
 main()
