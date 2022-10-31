@@ -14,8 +14,8 @@ def main():
     while True:
         year = get_year()
         month_number = get_month_number()
-        if not ((year >= 1582) or (month_number > len(month_days_list) or 
-        (month_number <= 0))):
+        if ((year < 1582) or (month_number > len(months_names_list)) or
+            (month_number <= 0)):
             break
         month_name = get_month_name(month_number, month_names_list)
         month_days = get_month_days(year, month_number, month_days_list)
