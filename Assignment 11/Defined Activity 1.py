@@ -14,10 +14,10 @@ def main():
     while True:
         year = get_year()
         month_number = get_month_number()
+        if not (year >= 1582) or (month_number > len(month_days_list)):
+            break
         month_name = get_month_name(month_number, month_names_list)
         month_days = get_month_days(year, month_number, month_days_list)
-        if not (year >= 1582) or (month_number in (0, 13)):
-            break
         display_days(month_name, month_days, year)
     
     
