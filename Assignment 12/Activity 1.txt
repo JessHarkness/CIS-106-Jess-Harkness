@@ -1,0 +1,59 @@
+# References: https://www.w3schools.com/python/ref_list_append.asp
+# References: https://www.askpython.com/python/array/python-add-elements-to-an-array
+# This program takes grade scores from a user and displays
+# the minimum, maximum, and average score.
+
+Main Program
+    Instructions 
+    
+    Define scores list
+    Define count
+    Repeat:
+        Get score
+        Append list
+        Update count
+    Until:
+        score < 0
+        
+    Calculate statistics
+    Display score statistics
+    
+Instructions
+    Parameters:
+        None
+    Process:
+        Display instructions ("enter a negative number to stop")
+    Return:
+        None
+        
+Get score
+    Parameters:
+        None
+    Process:
+        Display prompt (Ask for a score)
+    Return:
+        score
+
+Calculate statistics
+    Parameters:
+        Count
+        List of scores
+    Process:
+        Calculate list sum
+        Calculate average (sum / count)
+        Calculate minimum from list
+        Calculate maximum from list
+    Return:
+        Average
+        Minimum
+        Maximum
+
+Display score statistics
+        Parameters:
+            Average
+            Minimum
+            Maximum
+        Process:
+            Display average, minimum, and maximum
+        Return:
+            None
