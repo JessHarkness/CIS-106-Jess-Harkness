@@ -5,16 +5,7 @@
 
 Main Program
     Instructions 
-    
-    Get scores list
-    Define count
-    Repeat:
-        Get score
-        Append list
-        Update count
-    Until:
-        score < 0
-        
+    Get scores list        
     Calculate average
     Calculate minimum
     Calculate maximum
@@ -33,6 +24,13 @@ Get scores list
         None
     Process:
         Define scores list
+        Define count
+        Repeat:
+            Get score
+            Append list
+            Update count
+        Until:
+            score < 0
     Return:
         Scores list
         
@@ -46,11 +44,10 @@ Get score
 
 Calculate average
     Parameters:
-        Count
         List of scores
     Process:
         Calculate list sum
-        Calculate average (sum / count)
+        Calculate average (sum / length of list)
     Return:
         Average
         
@@ -71,11 +68,11 @@ Calculate maximum
         Maximum
         
 Display score statistics
-        Parameters:
-            Average
-            Minimum
-            Maximum
-        Process:
-            Display average, minimum, and maximum
-        Return:
-            None
+    Parameters:
+        Average
+        Minimum
+        Maximum
+    Process:
+        Display average, minimum, and maximum
+    Return:
+        None
