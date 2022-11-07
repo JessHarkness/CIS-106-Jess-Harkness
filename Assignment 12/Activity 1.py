@@ -9,12 +9,6 @@ def get_score():
     return score
 
 
-def get_score_list():
-    list_of_scores = []
-    
-    return list_of_scores
-
-
 def calculate_average(list_of_scores, count):
     total = sum(list_of_scores)
     average = total / count
@@ -48,7 +42,7 @@ def display_score_stats(average, minimum, maximum):
 
 def main():
     display_instructions()
-    list_of_scores = get_score_list()
+    list_of_scores = []
     count = 0
     while True:
         score = get_score()
