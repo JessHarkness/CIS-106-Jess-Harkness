@@ -24,11 +24,9 @@ Get scores list
         None
     Process:
         Define scores list
-        Define count
         Repeat:
             Get score
             Append list
-            Update count
         Until:
             score < 0
     Return:
