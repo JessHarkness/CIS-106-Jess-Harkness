@@ -1,5 +1,12 @@
 def display_instructions():
     print("Input a negative number when you are done entering scores.")
+    
+
+def get_number_of_scores():
+    print("How many scores will you be entering?")
+    number_of_scores = int(input())
+    
+    return number_of_scores
 
 
 def get_score():
@@ -9,8 +16,8 @@ def get_score():
     return score
 
 
-def get_score_list():
-    list_of_scores = []
+def get_score_list(number_of_scores):
+    list_of_scores = [] * number_of_scores
     
     return list_of_scores
 
@@ -48,8 +55,8 @@ def display_score_stats(average, minimum, maximum):
 
 def main():
     display_instructions()
-    
-    list_of_scores = get_score_list()
+    number_of_scores = get_number_of_scores()
+    list_of_scores = get_score_list(number_of_scores)
     count = 0
     while True:
         score = get_score()
