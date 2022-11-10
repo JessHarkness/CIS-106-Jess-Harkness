@@ -1,0 +1,35 @@
+# This program takes a line of text
+# and displays it backwards.
+# References: https://thispointer.com/remove-duplicate-spaces-from-string-in-python/
+# References: https://www.digitalocean.com/community/tutorials/python-remove-spaces-from-string
+
+Main program
+    Get user text
+    Process string 
+    Display text backwards
+    
+Get user text
+    Parameters:
+        None
+    Process:
+        Display prompt asking for a line of text
+    Return:
+        User text
+        
+Process string
+    Parameters:
+        User text
+    Process:
+        Remove leading/trailing spaces
+        Remove duplicate spaces
+        Reverse string
+    Return:
+        Reversed string
+
+Display text backwards
+    Parameters:
+        Reversed string
+    Process:
+        Display reversed string
+    Return:
+        None
