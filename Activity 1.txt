@@ -1,0 +1,50 @@
+# References: https://www.geeksforgeeks.org/how-to-read-from-a-file-in-python/
+
+Main program
+    Open file
+    Define scores array
+    Display array
+    Calculate max score
+    Calculate min score
+    Calculate average score
+    Display min, max, average
+
+Open file
+    Parameters:
+    Process:
+    Return:
+    
+Define array
+    Parameters:
+    Process:
+    Return:
+
+Display array
+    Parameters:
+    Process:
+    Return:
+
+Calculate max score
+    Parameters:
+    Process:
+    Return:
+    
+Calculate min score
+    Parameters:
+    Process:
+    Return:
+
+Calculate average score
+    Parameters:
+    Process:
+    Return:
+
+Display min,max,average
+    Parameters:
+        minimum
+        maximum
+        average
+    Process:
+        Display min, max, average
+    Return:
+        None
