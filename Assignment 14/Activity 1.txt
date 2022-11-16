@@ -14,9 +14,9 @@ Main program
 
 Verify file
     Parameters:
-        scores.txt file
+        none
     Process:
-        verify file exists
+        verify scores.txt file exists
     Return:
         none
         
