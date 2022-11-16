@@ -1,43 +1,65 @@
-# References: https://www.geeksforgeeks.org/how-to-read-from-a-file-in-python/
+# This program takes a file containing names and test scores,
+# isolates the scores, and calculates the minimum, maximum,
+# and average score.
 
 Main program
-    Open file
-    Define scores array
-    Display array
+    Define names and scores list
+    Process list
+    Display list
     Calculate max score
     Calculate min score
     Calculate average score
     Display min, max, average
 
-Open file
+Define names and scores list
     Parameters:
+        scores.txt file
     Process:
+        verify file
+        open file
+        assign scores list to file  
     Return:
-    
-Define array
+        names and scores list
+        
+Process scores list
     Parameters:
+        names and scores list
     Process:
+        process list to remove names and only retain scores
     Return:
-
-Display array
+        scores list
+        
+Display list
     Parameters:
+        scores list
     Process:
+        display list
     Return:
+        none
 
 Calculate max score
     Parameters:
+        scores list
     Process:
+        calculate max score from list
     Return:
+        maximum
     
 Calculate min score
     Parameters:
+        scores list
     Process:
+        calculate min score from list
     Return:
+        minimum
 
 Calculate average score
     Parameters:
+        scores list
     Process:
+        calculate average (sum / length of list)
     Return:
+        average
 
 Display min,max,average
     Parameters:
