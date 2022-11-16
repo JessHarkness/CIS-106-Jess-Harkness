@@ -3,6 +3,7 @@
 # and average score.
 
 Main program
+    Verify file
     Define names and scores list
     Process list
     Display list
@@ -11,11 +12,18 @@ Main program
     Calculate average score
     Display min, max, average
 
+Verify file
+    Parameters:
+        scores.txt file
+    Process:
+        verify file exists
+    Return:
+        none
+        
 Define names and scores list
     Parameters:
         scores.txt file
     Process:
-        verify file
         open file
         assign scores list to file  
     Return:
