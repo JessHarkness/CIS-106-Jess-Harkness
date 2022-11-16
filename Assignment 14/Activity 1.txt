@@ -18,7 +18,7 @@ Verify file
     Process:
         verify scores.txt file exists
     Return:
-        true or flase
+        none
         
 Define names and scores list
     Parameters:
