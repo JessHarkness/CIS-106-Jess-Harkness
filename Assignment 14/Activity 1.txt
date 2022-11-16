@@ -4,7 +4,6 @@
 
 Main program
     Verify file
-    Define names and scores list
     Process list
     Display list
     Calculate max score
@@ -20,20 +19,20 @@ Verify file
     Return:
         none
         
-Define names and scores list
-    Parameters:
-        scores.txt file
-    Process:
-        open file
-        assign scores list to file  
-    Return:
-        names and scores list
-        
 Process scores list
     Parameters:
-        names and scores list
+        none
     Process:
-        process list to remove names and only retain scores
+        create empty list
+        open file
+        read header
+        repeat:
+            read line
+            split line
+            convert to numeric data type
+            add field to list
+        until:
+            end of file
     Return:
         scores list
         
