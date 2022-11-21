@@ -7,11 +7,7 @@
 # in-list#:~:text=To%20split%20the%20elements%20of,string%20you%20want%20to%20keep.
 # https://www.w3schools.com/python/ref_func_round.asp
 
-def verify_file():
-    import os.path
-    file_exists = os.path.exists('scores.txt')
-    
-    
+ 
 def process_scores_list():
     scores_list = []
     with open('scores.txt', 'r') as file_contents:
@@ -51,7 +47,6 @@ def display_stats(maximum, minimum, average):
    
    
 def main():
-    verify_file()
     scores_list = process_scores_list()
     display_list(scores_list)
     maximum = calculate_max(scores_list)
