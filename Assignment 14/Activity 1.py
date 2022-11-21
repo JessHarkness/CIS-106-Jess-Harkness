@@ -8,7 +8,7 @@
 # https://www.w3schools.com/python/ref_func_round.asp
 
  
-def process_scores_list('Assignment 14/scores.txt'):
+def process_scores_list():
     scores_list = []
     with open('Assignment 14/scores.txt', 'r') as file_contents:
         for line in file_contents:
@@ -47,7 +47,7 @@ def display_stats(maximum, minimum, average):
    
    
 def main():
-    scores_list = process_scores_list('Assignment 14/scores.txt')
+    scores_list = process_scores_list()
     display_list(scores_list)
     maximum = calculate_max(scores_list)
     minimum = calculate_min(scores_list)
