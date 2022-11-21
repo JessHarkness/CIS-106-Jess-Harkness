@@ -56,7 +56,7 @@ def display_stats(maximum, minimum, average):
 def main():
     file_name = 'scores.txt'
     if os.path.isfile(file_name):
-        scores_list = process_scores_list()
+        scores_list = process_scores_list(file_name)
         display_list(scores_list)
         maximum = calculate_max(scores_list)
         minimum = calculate_min(scores_list)
