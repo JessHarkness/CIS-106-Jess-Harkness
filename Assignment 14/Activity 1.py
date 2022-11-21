@@ -8,7 +8,7 @@
 # https://www.w3schools.com/python/ref_func_round.asp
 
  
-def process_scores_list():
+def process_scores_list('scores.txt'):
     scores_list = []
     with open('scores.txt', 'r') as file_contents:
         for line in file_contents:
