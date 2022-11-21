@@ -9,12 +9,12 @@
 
 def verify_file():
     import os.path
-    file_exists = os.path.exists('/Users/jessharkness/Desktop/CIS 106/scores.txt')
+    file_exists = os.path.exists('scores.txt')
     
     
 def process_scores_list():
     scores_list = []
-    with open('/Users/jessharkness/Desktop/CIS 106/scores.txt','r') as file_contents:
+    with open('scores.txt','r') as file_contents:
         for line in file_contents:
             try:
                 score = line.strip().split(",")[1]
