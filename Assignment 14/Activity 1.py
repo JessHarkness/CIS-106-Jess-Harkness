@@ -14,7 +14,7 @@ def verify_file():
     
 def process_scores_list():
     scores_list = []
-    with open('scores.txt','r') as file_contents:
+    with open('scores.txt', 'r') as file_contents:
         for line in file_contents:
             try:
                 score = line.strip().split(",")[1]
@@ -61,5 +61,3 @@ def main():
     
     
 main()
-
-
