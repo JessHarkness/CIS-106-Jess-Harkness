@@ -1,3 +1,6 @@
+# This program processes a text file of names and test scores,
+# and returns the average, minimum, and maximum score.
+
 # References:
 # https://www.pythontutorial.net/python-basics/python-read-text-file/
 # https://stackoverflow.com/questions/30282305/python-coding-error-file-doesnt-exist
