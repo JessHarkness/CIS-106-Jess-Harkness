@@ -10,10 +10,14 @@
 # in-list#:~:text=To%20split%20the%20elements%20of,string%20you%20want%20to%20keep.
 # https://www.w3schools.com/python/ref_func_round.asp
 
+
+import os
+import sys
  
-def process_scores_list('scores.txt'):
+ 
+def process_scores_list(file_name):
     scores_list = []
-    with open('scores.txt', 'r') as file_contents:
+    with open(file_name, 'r') as file_contents:
         for line in file_contents:
             try:
                 score = line.strip().split(",")[1]
@@ -50,12 +54,16 @@ def display_stats(maximum, minimum, average):
    
    
 def main():
-    scores_list = process_scores_list('scores.txt')
-    display_list(scores_list)
-    maximum = calculate_max(scores_list)
-    minimum = calculate_min(scores_list)
-    average = calculate_average(scores_list)
-    display_stats(maximum, minimum, average)
+    file_name = 'scores.txt'
+    if os.path.isfile(file_name):
+        scores_list = process_scores_list()
+        display_list(scores_list)
+        maximum = calculate_max(scores_list)
+        minimum = calculate_min(scores_list)
+        average = calculate_average(scores_list)
+        display_stats(maximum, minimum, average)
+    else:
+        print("File does not exist.")
     
     
 main()
