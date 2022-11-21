@@ -47,7 +47,7 @@ def display_stats(maximum, minimum, average):
    
    
 def main():
-    scores_list = process_scores_list()
+    scores_list = process_scores_list('scores.txt')
     display_list(scores_list)
     maximum = calculate_max(scores_list)
     minimum = calculate_min(scores_list)
