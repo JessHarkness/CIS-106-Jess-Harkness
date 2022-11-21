@@ -5,6 +5,7 @@
 # https://www.programiz.com/python-programming/examples/read-line-by-line
 # https://bobbyhadz.com/blog/python-split-elements-
 # in-list#:~:text=To%20split%20the%20elements%20of,string%20you%20want%20to%20keep.
+# https://www.w3schools.com/python/ref_func_round.asp
 
 def verify_file():
     import os.path
@@ -14,23 +15,22 @@ def verify_file():
 def process_scores_list():
     scores_list = []
     with open('/Users/jessharkness/Desktop/CIS 106/scores.txt','r') as file_contents:
-        file_contents = file_contents.readlines()
-        file_contents = [new_line.strip() for new_line in file_contents]
-        file_contents.remove('Name,Score')
-        for lines in file_contents:
-            test_scores = file_contents[0].split(',')
-            scores_list.append(test_scores[1])
-            scores_list = [int(i) for i in scores_list]
+        for line in file_contents:
+            try:
+                score = line.strip().split(",")[1]
+                scores_list.append(int(score))
+            except:
+                pass
     return scores_list
         
         
 def display_list(scores_list):
-    print(scores_list)
+    print('Scores:', scores_list)
     
     
 def calculate_average(scores_list):
     total = sum(scores_list)
-    average = total / (len(scores_list))
+    average = round(total / (len(scores_list)), 2)
     return average
     
     
@@ -43,7 +43,8 @@ def calculate_min(scores_list):
     minimum = min(scores_list)
     return minimum
 
-def display_stats(average, maximum, minimum):
+
+def display_stats(maximum, minimum, average):
     print("Your maximum score is: " + str(maximum))
     print("Your minimum score is: " + str(minimum))
     print("Your average score is: " + str(average))
@@ -56,7 +57,7 @@ def main():
     maximum = calculate_max(scores_list)
     minimum = calculate_min(scores_list)
     average = calculate_average(scores_list)
-    display_stats(minimum, maximum, average)
+    display_stats(maximum, minimum, average)
     
     
 main()
