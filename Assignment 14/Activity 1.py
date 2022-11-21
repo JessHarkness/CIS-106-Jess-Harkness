@@ -12,7 +12,6 @@
 
 
 import os
-import sys
  
  
 def process_scores_list(file_name):
