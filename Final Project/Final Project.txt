@@ -1,21 +1,41 @@
-# Fall semester: Create a program that reads data from Plant Catalog and builds parallel arrays for the plant items, 
-# with each array containing the plant's full name, zone, light, and price, respectively. 
-# Availability will be ignored. After reading the data and building the arrays, display the plant items similar to the following:
+Assignment--
+Fall semester: Create a program that reads data from Plant Catalog and builds parallel arrays for the plant items, 
+with each array containing the plant's full name, zone, light, and price, respectively. 
+Availability will be ignored. include error handling for missing or invalid data.
+After reading the data and building the arrays, display the plant items similar to the following:
+common name (botanical name) - zone - light - price
+At the bottom, display the total number of items in the catalog and the average price per item similar to:
+0 items - $0.00 average price
 
-# common name (botanical name) - zone - light - price
+Program description--
+This program takes data from the Plant Catalog and displays each plant's common name, botanical name,
+zone, light, and price. The items in the catalog are tallied up and the average price of the items in the
+catalog is calculated.
 
-# At the bottom, display the total number of items in the catalog and the average price per item similar to:
-
-# 0 items - $0.00 average price
-
-# This program takes data from the Plant Catalog and displays each plant's common name, botanical name,
-# zone, light, and price. The items in the catalog are tallied up and the average price of the items in the
-# catalog is calculated.
-
+Notes--
 Input: plant catalog: https://www.w3schools.com/xml/plant_catalog.xml
-Processing: the XML file will be opened and read. using a loop (for loop?), useful information will be isolated for each plant item (common name, 
-botanical name, zone, light, price)- lines will be cleared of headers and end-of-line designators (ex: <PLANT> <COMMON> </COMMON>, all that will be stripped). an array will be built for each plant item; should look like this: [common name, botanical name, zone, light, price]. number of items will be calculated. average price will be calculated and rounded to 2 decimal places.
-Output: plant items will be displayed as: common name (botanical name) - zone - light - price. display total number of items. 
-display average price as $0.00
+
+Processing: the XML file will be opened and read. using a loop (for loop?), useful information will be isolated for each plant item (common name, botanical name, zone, light, price)- lines will be cleared of headers and end-of-line designators (ex: <PLANT> <COMMON> </COMMON>, all that will be stripped). an array will be built for each plant item; should look like this: [common name, botanical name, zone, light, price]. number of items will be calculated. average price will be calculated and rounded to 2 decimal places.
+
+Output: plant items will be displayed as: common name (botanical name) - zone - light - price. display total number of items (should be 36). 
+display average price as $x.yz (should be $6.37)
 
 Main program
+    if file exists:
+        process file
+        display file
+        calculate total number of plant items
+        calculate average price
+        display number of items
+        display average price
+    else:
+        print "File does not exist"
+        
+Process file
+    Parameters: 
+        plant catalog file
+    Process:
+        
+            
+
+
