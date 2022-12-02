@@ -15,7 +15,11 @@ catalog is calculated.
 Notes--
 Input: plant catalog: https://www.w3schools.com/xml/plant_catalog.xml
 
-Processing: the XML file will be opened and read. using a loop (for loop?), useful information will be isolated for each plant item (common name, botanical name, zone, light, price)- lines will be cleared of headers and end-of-line designators (ex: <PLANT> <COMMON> </COMMON>, all that will be stripped). an array will be built for each plant item; should look like this: [common name, botanical name, zone, light, price]. number of items will be calculated. average price will be calculated and rounded to 2 decimal places.
+Processing: the XML file will be opened and read. using a loop (for loop?), 
+useful information will be isolated for each plant item (common name, botanical name, zone, light, price)- lines will be cleared of headers and end-of-line designators (ex: <PLANT> <COMMON> </COMMON>, all that will be stripped). 
+an array will be built for each plant item; should look like this: 
+[common name, botanical name, zone, light, price]. number of items will be calculated. 
+average price will be calculated and rounded to 2 decimal places.
 
 Output: plant items will be displayed as: common name (botanical name) - zone - light - price. display total number of items (should be 36). 
 display average price as $x.yz (should be $6.37)
