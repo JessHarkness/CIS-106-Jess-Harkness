@@ -1,0 +1,18 @@
+# Fall semester: Create a program that reads data from Plant Catalog and builds parallel arrays for the plant items, 
+# with each array containing the plant's full name, zone, light, and price, respectively. 
+# Availability will be ignored. After reading the data and building the arrays, display the plant items similar to the following:
+
+# common name (botanical name) - zone - light - price
+
+# At the bottom, display the total number of items in the catalog and the average price per item similar to:
+
+# 0 items - $0.00 average price
+
+# This program takes data from the Plant Catalog and displays each plant's common name, botanical name,
+# zone, light, and price. The items in the catalog are tallied up and the average price of the items in the
+# catalog is calculated.
+
+Input: plant catalog: https://www.w3schools.com/xml/plant_catalog.xml
+Processing: the XML file will be opened and read. using a loop (for loop?), useful information will be isolated for each plant item (common name, botanical name, zone, light, price)- lines will be 
+cleared of headers and end-of-line designators (ex: <PLANT> <COMMON> </COMMON> will be stripped).
+Output:
