@@ -24,8 +24,8 @@ Process common names list
         define empty common names list
         open plant catalog:
             for lines in file:
-                common name = index 0
-                append common names list with common name
+                strip uneeded characters
+                append common names list with common names
     Return:
         common names list
         
@@ -35,7 +35,7 @@ Process botanical names list
     Process:
         define empty botanical names list
         for lines in file:
-            botanical name = index 1
+            strip uneeded characters
             append botanical names list with botanical name
     Return:
         botanical names list
@@ -46,7 +46,7 @@ Process zones list
     Process:
         define empty zones list
         for lines in file:
-            zone = index 2
+            strip uneeded characters
             append zones list with zone
     Return:
         zones list
@@ -57,7 +57,7 @@ Process light list
     Process:
         define empty lights list
         for lines in file:
-            light = index 3
+            strip uneeded characters
             append lights list with light
         Return:
             lights list
@@ -68,7 +68,7 @@ Process prices list
     Process:
         define empty prices list
         for lines in file:
-            price = index 4
+            strip uneeded characters
             append prices list with price
     Return:
         prices list
