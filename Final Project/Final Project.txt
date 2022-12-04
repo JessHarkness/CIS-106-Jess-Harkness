@@ -29,7 +29,7 @@ Process lists
         open plant catalog:
             for lines in file:
                 strip uneeded characters
-                append common names list with common names
+                append lists with according elements
     Return:
         common names list
         
