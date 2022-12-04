@@ -4,7 +4,7 @@ zone, light, and price. The program will display an item count and the average p
 catalog.
 
 Main program
-    file name = "plant catalog"
+    assign file name to a constant
     if file exists:
         process common names list
         process botanical names list
@@ -19,7 +19,7 @@ Main program
         
 Process common names list
     Parameters: 
-        plant catalog file
+        plant catalog
     Process:
         define empty common names list
         open plant catalog:
@@ -31,7 +31,7 @@ Process common names list
         
 Process botanical names list
     Parameters:
-        plant catalog file
+        plant catalog
     Process:
         define empty botanical names list
         for lines in file:
@@ -42,7 +42,7 @@ Process botanical names list
         
 Process zones list
     Parameters:
-        plant catalog file
+        plant catalog
     Process:
         define empty zones list
         for lines in file:
@@ -53,7 +53,7 @@ Process zones list
         
 Process light list
     Parameters:
-        plant catalog file
+        plant catalog
     Process:
         define empty lights list
         for lines in file:
@@ -64,7 +64,7 @@ Process light list
             
 Process prices list
     Parameters:
-        plant catalog file
+        plant catalog
     Process:
         define empty prices list
         for lines in file:
