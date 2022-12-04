@@ -6,72 +6,32 @@ catalog.
 Main program
     assign file name to a constant
     if file exists:
-        process common names list
-        process botanical names list
-        process zones list
-        process lights list
-        process prices list
+        common names list = process lists (common names)
+        botanical names list = process lists (botanical names)
+        zones list = process lists (zones)
+        lights list = process lists (lights)
+        prices list = process lists (prices)
         display plant items
         calculate average price
         display statitiscs
     else:
         print "File does not exist"
         
-Process common names list
+Process lists
     Parameters: 
         plant catalog
     Process:
         define empty common names list
+        define empty botanical names list
+        define empty zones list
+        define empty lights list
+        define empty prices list
         open plant catalog:
             for lines in file:
                 strip uneeded characters
                 append common names list with common names
     Return:
         common names list
-        
-Process botanical names list
-    Parameters:
-        plant catalog
-    Process:
-        define empty botanical names list
-        for lines in file:
-            strip uneeded characters
-            append botanical names list with botanical name
-    Return:
-        botanical names list
-        
-Process zones list
-    Parameters:
-        plant catalog
-    Process:
-        define empty zones list
-        for lines in file:
-            strip uneeded characters
-            append zones list with zone
-    Return:
-        zones list
-        
-Process light list
-    Parameters:
-        plant catalog
-    Process:
-        define empty lights list
-        for lines in file:
-            strip uneeded characters
-            append lights list with light
-        Return:
-            lights list
-            
-Process prices list
-    Parameters:
-        plant catalog
-    Process:
-        define empty prices list
-        for lines in file:
-            strip uneeded characters
-            append prices list with price
-    Return:
-        prices list
         
 Display plant items
     Parameters:
