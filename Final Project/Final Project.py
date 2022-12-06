@@ -3,6 +3,8 @@
 # count of the catalog and the average price of the items in the catalog
 # will be displayed.
 
+# References: https://docs.python.org/3/library/stdtypes.html#str.startswith
+
 import os
 def main():
     plant_catalog = '/Users/jessharkness/Desktop/CIS 106/plant_catalog.xml'
@@ -17,32 +19,36 @@ def main():
         average_price = calculate_average(plant_prices)
         display_statistics(average_price, plant_prices)
     else:
-        print("File name is invalid or file does not exist.")
+        print("File does not exist.")
         
 def process_lists(plant_catalog):
-    common_names_list = []
-    botanical_names_list = []
-    growing_zones_list = []
-    light_levels_list = []
-    plant_prices_list = []
+    common_names = []
+    botanical_names = []
+    growing_zones = []
+    light_levels = []
+    plant_prices = []
     with open(plant_catalog, 'r') as file_contents:
-        # conditional statements? if common name, add to common list. if botanical name,
-        # add to botanical list, etc.
-        # append according list
-        # for prices list, list type will be changed to integer
-        # only one function is needed for processing lists, and this function
-        # will be called five times (once for each list)
+        if line.startswith('<COMMON>'):
+            # remove prefix and suffix. strip leading/trailing spaces.
+            common_name = line.strip().removesuffix('<COMMMON>').removeprefix('</COMMON>')
+            common_names_list.append(common_name)
+    return common_names_list
+# repeat this function for each variable (botanical, light, zone, price)
+# for prices list, list data type will be changed to float
+# only one function is needed for processing lists, and this function
+# will be called five times (once for each list)
         
 def display_items(common_names, botanical_names, growing_zones,
                   light_levels, plant_prices):
     for index in range(len(common_names)):
-        print(common_names[index] + ' ('+ botanical_names[index] + ')' + ' - ' + growing_zones[index] + ' - ' + light_levels[index] + ' - ' + plant_prices[index])
+    print(str(common_names[index]) + ' (' +str(botanical_names[index]) + ') ' + ' - ' + str(growing_zones[index]) + ' - ' + str(light_levels[index]) + ' - $' + str(plant_prices[index]))
 
 def calculate_average(plant_prices):
     total = sum(plant_prices)
     average_price = round(total / (len(plant_prices)), 2)
     return average_price
 
-def display_statistics(average_price, prices_list):
-    print((len(prices_list)) + ' items. - $' + average_price + ' average price.') 
+def display_statistics(average_price, plant_prices):
+    print(str(len(plant_prices)) + ' items. - $' + str(average_price) + ' average price.')
+ 
           
