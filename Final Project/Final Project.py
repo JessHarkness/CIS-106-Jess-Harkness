@@ -41,14 +41,13 @@ def process_lists(plant_catalog):
 def display_items(common_names, botanical_names, growing_zones,
                   light_levels, plant_prices):
     for index in range(len(common_names)):
-    print(str(common_names[index]) + ' (' +str(botanical_names[index]) + ') ' + ' - ' + str(growing_zones[index]) + ' - ' + str(light_levels[index]) + ' - $' + str(plant_prices[index]))
+        print(common_names[index] + ' ('+ botanical_names[index] + ')' + ' - ' + growing_zones[index] + ' - ' + light_levels[index] + ' - ' + plant_prices[index])
 
 def calculate_average(plant_prices):
     total = sum(plant_prices)
     average_price = round(total / (len(plant_prices)), 2)
     return average_price
 
-def display_statistics(average_price, plant_prices):
-    print(str(len(plant_prices)) + ' items. - $' + str(average_price) + ' average price.')
- 
+def display_statistics(average_price, prices_list):
+    print((len(prices_list)) + ' items. - $' + average_price + ' average price.') 
           
