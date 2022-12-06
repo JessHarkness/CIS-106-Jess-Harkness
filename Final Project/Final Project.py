@@ -28,11 +28,12 @@ def process_lists(plant_catalog):
     light_levels = []
     plant_prices = []
     with open(plant_catalog, 'r') as file_contents:
-        if line.startswith('<COMMON>'):
+        for line in file_contents:
+            if line.startswith('<COMMON>'):
             # remove prefix and suffix. strip leading/trailing spaces.
-            common_name = line.strip().removesuffix('<COMMMON>').removeprefix('</COMMON>')
-            common_names_list.append(common_name)
-    return common_names_list
+                common_name = line.strip().removesuffix('<COMMMON>').removeprefix('</COMMON>')
+                common_names_list.append(common_name)
+        return common_names_list
 # repeat this function for each variable (botanical, light, zone, price)
 # for prices list, list data type will be changed to float
 # only one function is needed for processing lists, and this function
