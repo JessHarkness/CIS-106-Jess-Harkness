@@ -4,6 +4,7 @@
 # will be displayed.
 
 # References: https://docs.python.org/3/library/stdtypes.html#str.startswith
+# References: https://stackoverflow.com/questions/67528351/how-to-loop-on-startswith-method
 
 import os
 def main():
@@ -28,12 +29,11 @@ def process_lists(plant_catalog):
     light_levels = []
     plant_prices = []
     with open(plant_catalog, 'r') as file_contents:
-        for line in file_contents:
-            if line.startswith('<COMMON>'):
-            # remove prefix and suffix. strip leading/trailing spaces.
-                common_name = line.strip().removesuffix('<COMMMON>').removeprefix('</COMMON>')
-                common_names_list.append(common_name)
-        return common_names_list
+    for line in file_contents:
+        line = line.strip()
+        if any([line.startswith('<COMMON>')]):
+            common_name = line.removeprefix('<COMMON>').removesuffix('</COMMON>')
+            common_names.append(common_name)
 # repeat this function for each variable (botanical, light, zone, price)
 # for prices list, list data type will be changed to float
 # only one function is needed for processing lists, and this function
@@ -42,13 +42,14 @@ def process_lists(plant_catalog):
 def display_items(common_names, botanical_names, growing_zones,
                   light_levels, plant_prices):
     for index in range(len(common_names)):
-        print(common_names[index] + ' ('+ botanical_names[index] + ')' + ' - ' + growing_zones[index] + ' - ' + light_levels[index] + ' - ' + plant_prices[index])
+    print(str(common_names[index]) + ' (' +str(botanical_names[index]) + ') ' + ' - ' + str(growing_zones[index]) + ' - ' + str(light_levels[index]) + ' - $' + str(plant_prices[index]))
 
 def calculate_average(plant_prices):
     total = sum(plant_prices)
     average_price = round(total / (len(plant_prices)), 2)
     return average_price
 
-def display_statistics(average_price, prices_list):
-    print((len(prices_list)) + ' items. - $' + average_price + ' average price.') 
+def display_statistics(average_price, plant_prices):
+    print(str(len(plant_prices)) + ' items. - $' + str(average_price) + ' average price.')
+ 
           
