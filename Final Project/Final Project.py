@@ -8,8 +8,11 @@
 # https://stackoverflow.com/questions/67528351/how-to-loop-on-startswith-method
 # https://blog.finxter.com/how-to-convert-a-string-list-to-a-float-list-in-python/
 # https://stackoverflow.com/questions/2507808/how-to-check-whether-a-file-is-empty-or-not
+# https://stackoverflow.com/questions/42205927/how-to-end-code-if-if-condition-is-not-met
+
 
 import os
+import sys
 
 
 def main():
