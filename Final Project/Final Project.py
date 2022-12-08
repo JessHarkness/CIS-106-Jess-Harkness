@@ -48,8 +48,8 @@ def process_lists(plant_catalog, tag):
                     array.append(line)
                 except:
                     pass
-        if len(array) == 0:
-            print('Error: Missing or bad data')
+    if len(array) == 0:
+        print('Error: Missing or bad data')
     return array
 
 
