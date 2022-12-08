@@ -10,7 +10,7 @@
 
 import os
 def main():
-    plant_catalog = '/Users/jessharkness/Desktop/CIS 106/plant_catalog.xml'
+    plant_catalog = 'plant_catalog.xml'
     if os.path.isfile(plant_catalog):
         tag = 'COMMON' or 'BOTANICAL' or 'ZONE' or 'LIGHT' or 'PRICE'
         common_names = process_lists(plant_catalog, 'COMMON')
