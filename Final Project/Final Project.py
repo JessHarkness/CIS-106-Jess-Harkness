@@ -18,12 +18,11 @@ import sys
 def main():
     plant_catalog = 'plant_catalog.xml'
     if os.path.isfile(plant_catalog):
-        tag = 'COMMON' or 'BOTANICAL' or 'ZONE' or 'LIGHT' or 'PRICE'
-        common_names = process_lists(plant_catalog, 'COMMON')
-        botanical_names = process_lists(plant_catalog, 'BOTANICAL')
-        growing_zones = process_lists(plant_catalog, 'ZONE')
-        light_levels = process_lists(plant_catalog, 'LIGHT')
-        plant_price = process_lists(plant_catalog, 'PRICE')
+        common_names = process_lists(plant_catalog, tag = 'COMMON')
+        botanical_names = process_lists(plant_catalog, tag = 'BOTANICAL')
+        growing_zones = process_lists(plant_catalog, tag = 'ZONE')
+        light_levels = process_lists(plant_catalog, tag = 'LIGHT')
+        plant_price = process_lists(plant_catalog, tag = 'PRICE')
         display_catalog(common_names, botanical_names,
                       growing_zones, light_levels, plant_price)
         average_price = calculate_average(plant_price)
