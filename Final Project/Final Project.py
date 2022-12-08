@@ -18,7 +18,6 @@ import sys
 def main():
     plant_catalog = 'plant_catalog.xml'
     if os.path.isfile(plant_catalog):
-        empty_file_check(plant_catalog)
         tag = 'COMMON' or 'BOTANICAL' or 'ZONE' or 'LIGHT' or 'PRICE'
         common_names = process_lists(plant_catalog, 'COMMON')
         botanical_names = process_lists(plant_catalog, 'BOTANICAL')
@@ -31,12 +30,6 @@ def main():
         display_statistics(average_price, plant_price)
     else:
         print("File does not exist")
-        
-        
-def empty_file_check(plant_catalog):
-    if os.path.getsize(plant_catalog) == 0:
-        print("File is empty")
-        sys.exit()
         
         
 def process_lists(plant_catalog, tag):
@@ -52,6 +45,9 @@ def process_lists(plant_catalog, tag):
                     array.append(line)
                 except:
                     pass
+        if len(array) == 0:
+            print("File is empty")
+            sys.exit()
     return array
 
 
