@@ -9,6 +9,8 @@
 # https://blog.finxter.com/how-to-convert-a-string-list-to-a-float-list-in-python/
 
 import os
+
+
 def main():
     plant_catalog = 'plant_catalog.xml'
     if os.path.isfile(plant_catalog):
@@ -31,7 +33,8 @@ def process_lists(plant_catalog, tag):
     with open(plant_catalog, 'r') as file_contents:
         for line in file_contents:
             line = line.strip()
-            line = line.replace('<','').replace('>','').replace('/','').replace('$','')
+            line = line.replace('<', '').replace('>', '').replace('/', '')
+            line = line.replace('$', '')
             if any([line.startswith(tag)]):
                 line = line.removeprefix(tag).removesuffix(tag)
                 array.append(line)
