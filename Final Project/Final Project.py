@@ -33,6 +33,9 @@ def main():
 def empty_file_check(plant_catalog):
     if os.stat(plant_catalog).st_size == 0:
         print("File is empty")
+        sys.exit()
+    else:
+        pass
         
         
 def process_lists(plant_catalog, tag):
