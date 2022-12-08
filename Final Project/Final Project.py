@@ -60,9 +60,13 @@ def display_catalog(common_names, botanical_names, growing_zones,
 
 
 def calculate_average(plant_price):
-    plant_price = [float(price) for price in plant_price]
-    total = sum(plant_price)
-    average_price = round(total / (len(plant_price)), 2)
+    try:
+        plant_price = [float(price) for price in plant_price]
+        total = sum(plant_price)
+        average_price = round(total / (len(plant_price)), 2)
+    except:
+        print('Error: Invalid data')
+        sys.exit()
     return average_price
 
 
