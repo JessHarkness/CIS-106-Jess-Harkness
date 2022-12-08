@@ -45,7 +45,7 @@ def process_lists(plant_catalog, tag):
                 except:
                     pass
         if len(array) == 0:
-            print("File is empty")
+            print("File is empty or field is missing")
             sys.exit()
     return array
 
