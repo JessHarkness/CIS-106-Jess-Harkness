@@ -3,8 +3,10 @@
 # count of the catalog and the average price of the items in the catalog
 # will be displayed.
 
-# References: https://docs.python.org/3/library/stdtypes.html#str.startswith
-# References: https://stackoverflow.com/questions/67528351/how-to-loop-on-startswith-method
+# References:
+# https://docs.python.org/3/library/stdtypes.html#str.startswith
+# https://stackoverflow.com/questions/67528351/how-to-loop-on-startswith-method
+# https://blog.finxter.com/how-to-convert-a-string-list-to-a-float-list-in-python/
 
 import os
 def main():
@@ -29,10 +31,12 @@ def process_lists(plant_catalog, tag):
     with open(plant_catalog, 'r') as file_contents:
         for line in file_contents:
             line = line.strip()
-            line = line.replace('<','').replace('>','').replace('/','')
+            line = line.replace('<','').replace('>','').replace('/','').replace('$','')
             if any([line.startswith(tag)]):
                 line = line.removeprefix(tag).removesuffix(tag)
                 array.append(line)
+            else:
+                pass
     return array
 
 
@@ -45,13 +49,14 @@ def display_catalog(common_names, botanical_names, growing_zones,
 
 
 def calculate_average(plant_price):
+    plant_price = [float(price) for price in plant_price]
     total = sum(plant_price)
     average_price = round(total / (len(plant_price)), 2)
     return average_price
 
 
 def display_statistics(average_price, plant_price):
-    print(str(len(plant_price)) + ' items. - $' +
+    print(str(len(plant_price)) + ' items - $' +
           str(average_price) + ' average price.')
- 
-          
+    
+main()     
