@@ -7,6 +7,7 @@
 # https://docs.python.org/3/library/stdtypes.html#str.startswith
 # https://stackoverflow.com/questions/67528351/how-to-loop-on-startswith-method
 # https://blog.finxter.com/how-to-convert-a-string-list-to-a-float-list-in-python/
+# https://stackoverflow.com/questions/2507808/how-to-check-whether-a-file-is-empty-or-not
 
 import os
 
@@ -15,6 +16,7 @@ def main():
     plant_catalog = 'plant_catalog.xml'
     if os.path.isfile(plant_catalog):
         tag = 'COMMON' or 'BOTANICAL' or 'ZONE' or 'LIGHT' or 'PRICE'
+        empty_file_check(plant_catalog)
         common_names = process_lists(plant_catalog, 'COMMON')
         botanical_names = process_lists(plant_catalog, 'BOTANICAL')
         growing_zones = process_lists(plant_catalog, 'ZONE')
@@ -26,6 +28,11 @@ def main():
         display_statistics(average_price, plant_price)
     else:
         print("File does not exist.")
+        
+        
+def empty_file_check(plant_catalog):
+    if os.stat(plant_catalog).st_size == 0:
+        print("File is empty.")
         
         
 def process_lists(plant_catalog, tag):
