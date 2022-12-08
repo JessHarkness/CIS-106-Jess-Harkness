@@ -27,12 +27,12 @@ def main():
         average_price = calculate_average(plant_price)
         display_statistics(average_price, plant_price)
     else:
-        print("File does not exist.")
+        print("File does not exist")
         
         
 def empty_file_check(plant_catalog):
     if os.stat(plant_catalog).st_size == 0:
-        print("File is empty.")
+        print("File is empty")
         
         
 def process_lists(plant_catalog, tag):
