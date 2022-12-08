@@ -43,10 +43,13 @@ def process_lists(plant_catalog, tag):
             line = line.replace('<', '').replace('>', '').replace('/', '')
             line = line.replace('$', '')
             if any([line.startswith(tag)]):
-                line = line.removeprefix(tag).removesuffix(tag)
-                array.append(line)
-            else:
-                pass
+                try:
+                    line = line.removeprefix(tag).removesuffix(tag)
+                    array.append(line)
+                except:
+                    pass
+        if len(array) == 0:
+            print('Error: Missing or bad data')
     return array
 
 
